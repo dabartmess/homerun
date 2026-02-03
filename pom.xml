@@ -1,0 +1,5 @@
+<dependency>
+    <groupId>org.hibernate.orm</groupId>
+    <artifactId>hibernate-spatial</artifactId>
+    <version>6.x.x.Final</version>
+</dependency>

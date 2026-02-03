@@ -1,0 +1,8 @@
+CREATE TABLE users (
+    user_id SERIAL PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password_hash TEXT NOT NULL,
+    full_name VARCHAR(100),
+    role VARCHAR(20) DEFAULT 'RIDER', -- RIDER, DRIVER, ADMIN
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

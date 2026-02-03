@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request a Ride</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Book Your Ride</h2>
+        <form id="riderForm">
+            <input type="text" id="riderName" placeholder="Your Name" required>
+            <input type="text" id="pickupAddress" placeholder="Pickup Address" required>
+            <input type="text" id="destAddress" placeholder="Destination Address" required>
+            <button type="submit">Submit Request</button>
+        </form>
+        <div id="map" style="height: 400px; width: 100%; margin-top: 20px;"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

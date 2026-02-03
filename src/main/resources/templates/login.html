@@ -1,0 +1,45 @@
+<div class="auth-container">
+    <div class="auth-card">
+        <div class="auth-toggle">
+            <button id="loginTab" class="active" onclick="showLogin()">Login</button>
+            <button id="registerTab" onclick="showRegister()">Register</button>
+        </div>
+
+        <form id="loginForm" action="/login" method="POST">
+            <h3>Welcome Back</h3>
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" name="username" required>
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <button type="submit" class="btn-primary">Sign In</button>
+        </form>
+
+        <form id="registerForm" action="/api/users/register" method="POST" style="display:none;">
+            <h3>Create Account</h3>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" name="fullName" required>
+            </div>
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label>Register As</label>
+                <select name="role">
+                    <option value="RIDER">Rider</option>
+                    <option value="DRIVER">Driver</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-primary">Register</button>
+        </form>
+    </div>
+</div>
